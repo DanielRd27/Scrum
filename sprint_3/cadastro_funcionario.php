@@ -42,7 +42,7 @@ if (isset($_GET['delete_id'])) {
 }
 
 // Busca todos os fornecedores para listar na tabela
-$funcionarios = $conn->query("SELECT * FROM funcionários");
+$funcionarios = $conn->query("SELECT * FROM funcionarios");
 
 // Se foi solicitada a edição de um fornecedor, busca os dados dele
 $funcionario = null;

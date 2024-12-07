@@ -9,7 +9,7 @@
     <!-- Link para o arquivo CSS para estilização da página -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background: url(assets/Fundo.jpg); background-repeat: repeat; background-size: cover;">
+<body style="background: url(assets/Fundo.jpg); background-attachment: fixed; background-size: cover;">
     <?php include('header.html'); ?>
     
     <main>
@@ -19,3 +19,5 @@
     </div>
 </body>
 </html>
+
+

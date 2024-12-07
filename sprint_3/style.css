@@ -25,8 +25,8 @@
 /* Estilos globais */
 body {
     font-family: var(--font-family);
-    background: url(assets/Roupas.jpg);
-    background-repeat: repeat;
+    background-image: url(assets/Roupas.jpg);
+    background-attachment: fixed;
     background-size: cover;
     color: var(--text-color);
     line-height: 1.6;
@@ -87,7 +87,9 @@ body {
 }
 .menu{
     display: flex;
-    justify-content: space-between;
+
+    gap: 3rem;
+
     width: 45%;
     max-height: 80px;
     padding-left: 10px;
@@ -316,48 +318,94 @@ button:hover{
     flex-direction: column;
     align-items: center;
 }
-@media (min-width:768px) and (max-width:1023px) {
-    .login{
+
+
+
+/* ----------- */
+
+
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .login {
         width: 550px; 
     }
-    .logo2{
+    .logo2 {
         width: 200px;
     }
-    .menu li a{
+    .menu li a {
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1100px;
+    }
+
+    .login {
+        width: 550px; 
+    }
+    .logo2 {
+        width: 200px;
+    }
+    .menu li a {
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width:991px) and (max-width:1199px){
+    .container {
+        width: 950px;
+    }
+
+    .login {
+        width: 550px; 
+    }
+    .logo2 {
+        width: 200px;
+    }
+    .menu li a {
         font-size: 15px;
     }
 }
-@media only screen and (max-width:425px){
 
-    .login{
-        width: 280px;
-        flex-direction: column;
-        height: 350px;
-        flex-direction: column-reverse;
-        align-items: center;
+@media (min-width:768px) and (max-width: 991px){
+    .container {
+        width: 750px;
     }
-    .logo2{
-       visibility: hidden;
+
+    .login {
+        width: 550px; 
     }
-    .header{
+    .logo2 {
         width: 200px;
-        background-color: #c0392b;
     }
-    .menu{
-        width: 20%;
-    }
-    main h1{
-        font-size: 10px;
-    }
-    .logo{
-        width: 80px;
+    .menu li a {
+        font-size: 15px;
     }
 }
-@media only screen and (max-width:767px) and (min-width:426px){
-    .login{
-        width: 550px;
+
+@media (max-width: 768px) {
+    .container {
+        width: 750px;
     }
-    .logo2{
+
+    .login {
+        width: 550px; 
+    }
+    .logo2 {
         width: 200px;
+    }
+    .menu li a {
+        font-size: 15px;
+    }
+
+    * {
+        font-size: 16px;
     }
 }
